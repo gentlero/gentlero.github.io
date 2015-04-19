@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+  
+  <title>Examples - PHP DuckDuckGo API</title>
+  
+  
+  <meta name="description" content="Simple DuckDuckGo API wrapper for PHP >= 5.3.2">
+  
+
+  <meta name="google-site-verification" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/favicon.ico">
+
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-60x60-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="http://gentlero.github.io/duckduckgo-api/assets/images/fav/apple-touch-icon.png">
+
+  <!-- Windows 8 Tile -->
+  <meta name="msapplication-square70x70logo" content="http://gentlero.github.io/duckduckgo-api/assets/images/fav/windows-tile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="http://gentlero.github.io/duckduckgo-api/assets/images/fav/windows-tile-150x150.png">
+  <meta name="msapplication-square310x310logo" content="http://gentlero.github.io/duckduckgo-api/assets/images/fav/windows-tile-310x310.png">
+  <meta name="msapplication-TileImage" content="http://gentlero.github.io/duckduckgo-api/assets/images/fav/windows-tile-144x144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+
+  <link rel="stylesheet" href="http://gentlero.github.io/duckduckgo-api/assets/css/style.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.4.0/styles/solarized_light.min.css">
+
+  <script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://gentlero.github.io/duckduckgo-api/">Gentle Software</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="nav-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- populated via JS -->
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="https://github.com/gentlero/duckduckgo-api" title="View on Github"><i class="fa fa-github"></i></a></li>
+        
+
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="intro">
+  <div class="container">
+    <h1>PHP DuckDuckGo API</h1>
+    <p>Simple DuckDuckGo API wrapper for PHP</p>
+  </div>
+</section>
+
+<main>
+  <div class="content">
+    <aside>
+      
+      <ul class="nav nav-list">
+        <li class="nav-list-head" data-target="http://gentlero.github.io/duckduckgo-api/"><i class="fa fa-bookmark-o fa-lg gray"></i> <a href="http://gentlero.github.io/duckduckgo-api/" title="Getting started">Getting started</a></li>
+
+        
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/#introduction">Introduction</a></li>
+          
+        
+      </ul>
+      
+      <ul class="nav nav-list">
+        <li class="nav-list-head" data-target="http://gentlero.github.io/duckduckgo-api/installation.html"><i class="fa fa-bookmark-o fa-lg gray"></i> <a href="http://gentlero.github.io/duckduckgo-api/installation.html" title="Installation">Installation</a></li>
+
+        
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/installation.html#requirements">Requirements</a></li>
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/installation.html#composer">Composer</a></li>
+          
+        
+      </ul>
+      
+      <ul class="nav nav-list">
+        <li class="nav-list-head" data-target="http://gentlero.github.io/duckduckgo-api/examples/"><i class="fa fa-bookmark-o fa-lg gray"></i> <a href="http://gentlero.github.io/duckduckgo-api/examples/" title="Examples">Examples</a></li>
+
+        
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/examples/bang.html">Bang</a></li>
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/examples/categories.html">Categories</a></li>
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/examples/disambiguation.html">Disambiguation</a></li>
+          
+          <li><a href="http://gentlero.github.io/duckduckgo-api/examples/topic.html">Topic</a></li>
+          
+        
+      </ul>
+      
+      <ul class="nav nav-list">
+        <li class="nav-list-head" data-target="http://gentlero.github.io/duckduckgo-api/faq.html"><i class="fa fa-bookmark-o fa-lg gray"></i> <a href="http://gentlero.github.io/duckduckgo-api/faq.html" title="FAQ">FAQ</a></li>
+
+        
+      </ul>
+      
+    </aside>
+
+    <article>
+      <h1 id="usage-examples">Usage examples</h1>
+
+<p><strong>TIP:</strong> Although all examples from this documentation are instantiating each class, a single point of entry is also
+available:</p>
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">$ddg      = new \DDG\API\Api();</span>
+<span class="x">$result   = json_decode($ddg-&gt;api(&#39;Disambiguation&#39;)-&gt;get(&#39;apple&#39;)-&gt;getContent(), true);</span>
+</code></pre></div>
+<h3 id="response-format">Response format</h3>
+
+<p>DuckDuckGo API supports JSON and XML responses. In order to switch the response format, you can use <code>setFormat()</code>
+method:</p>
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">$topic  = new \DDG\API\Topic();</span>
+<span class="x">$result = $topic-&gt;setFormat(&#39;xml&#39;)-&gt;getSummary(&#39;valley forge national park&#39;);</span>
+</code></pre></div>
+<h3 id="listeners">Listeners</h3>
+
+<p>In order to facilitate some tasks, a few listeners are available:</p>
+
+<h4 id="jsonbodylistener:">JsonBodyListener:</h4>
+
+<p>Will decode a JSON response for you.</p>
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+<span class="k">use</span> <span class="nx">DDG\API\Api</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">DDG\API\Http\Listener\JsonBodyListener</span><span class="p">;</span>
+
+<span class="nv">$ddg</span>    <span class="o">=</span> <span class="k">new</span> <span class="nx">Api</span><span class="p">();</span>
+<span class="nv">$ddg</span><span class="o">-&gt;</span><span class="na">getClient</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">addListener</span><span class="p">(</span><span class="k">new</span> <span class="nx">JsonBodyListener</span><span class="p">());</span>
+
+<span class="sd">/** @var \stdClass $result */</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nv">$ddg</span><span class="o">-&gt;</span><span class="na">api</span><span class="p">(</span><span class="s1">&#39;Disambiguation&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getContent</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="available-examples">Available examples</h3>
+
+<ul>
+<li><a href="bang.html">Bang</a></li>
+<li><a href="categories.html">Categories</a></li>
+<li><a href="disambiguation.html">Disambiguation</a></li>
+<li><a href="topic.html">Topic</a></li>
+</ul>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+    <div class="left">&copy; Copyright <a href="//www.gentle.ro">Gentle Software</a>.</div>
+    <div class="middle"></div>
+    <div class="right">
+      <ul class="list-inline">
+        
+        <li><a href="https://github.com/gentlero/duckduckgo-api" title="View on Github"><i class="fa fa-github"></i></a></li>
+        
+
+        
+      </ul>
+    </div>
+</footer>
+
+
+<script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/highlight.js/8.4.0/highlight.min.js"></script>
+<script src="http://gentlero.github.io/duckduckgo-api/assets/js/main.js"></script>
+
+
+</body>
+</html>
